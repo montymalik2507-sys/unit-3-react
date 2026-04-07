@@ -4,7 +4,9 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Menu from './componets/menu'
-import Article from './componets/article'   
+import Article from './componets/article' 
+import Homepage from './componets/homepage'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +16,7 @@ function App() {
     <>
     <Menu count={count} setCount={setCount}/> 
     <Article />
+    <Homepage />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
