@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import style from'../css/article.module.css'
 
 function Article (){
     const [count ,setCount]=useState(0)
@@ -28,9 +29,9 @@ function Article (){
 
         Paras said, "As a bowling group...we always discuss how to get wickets in the middle, execute our plans, maintain the pressure on oppositions and how to exploit individual strengths and weaknesses."</p>
          <h2>{count}</h2>
-        <button onClick={handleIncrement}>Increment</button>
+        <button className="style.btn" onClick={handleIncrement}>Increment</button>
         <h2>{count}</h2>
-        <button onClick={handleDecrement}>Decrement</button>
+        <button className="style.btn" onClick={handleDecrement}>Decrement</button>
     </div>
   )
 }
