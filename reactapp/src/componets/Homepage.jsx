@@ -1,19 +1,19 @@
 import React from 'react'
 
-// function Homepage() {
-    // if (loggedin) {
-    //     return ( 
-    //         <button>Logout</button>
-    //     )
-    // } else {
-    //     return (
-    //         <button>Login</button>
-    //     )
-    // }
-// returnloggedin ? <button>Logout</button> : <button>Login</button>
+function Homepage() {
+    if (loggedin) {
+        return ( 
+            <button style={{backgroundColor:"blue",color:"white",width:"100px",height:"30px"}}>Logout</button>
+        )
+    } else {
+        return (
+            <button style={{backgroundColor:"green",color:"white",width:"100px",height:"30px"}}>Login</button>
+        )
+    }
+returnloggedin ? <button>Logout</button> : <button>Login</button>
 
   
-// }
+}
 
 class Homepage extends React.Component {
     constructor(props) {

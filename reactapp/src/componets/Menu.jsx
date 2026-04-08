@@ -21,6 +21,7 @@
 
 // export default Menu
 import React, { Component } from 'react'
+import '../css/menu.css'
 
 export default class menu extends Component {
   render() {
@@ -34,7 +35,7 @@ export default class menu extends Component {
          <li>Contact</li>
       </ul>
       <button
-           className="counter"
+           className="menu-btn"
            onClick={() => this.props.setCount((count) => count + 1)}
         >
           Count is {this.props.count}
