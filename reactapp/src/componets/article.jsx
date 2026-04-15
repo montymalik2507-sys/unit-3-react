@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from "@emotion/styled"
+import {css } from "@emotion/react"
 
 function Article (){
     const [count ,setCount]=useState(0)
@@ -33,6 +34,7 @@ function Article (){
         <h2>{count}</h2>
         <button className="style.btn" onClick={handleDecrement}>Decrement</button>
         <Button red > click me! </Button> 
+        <button css={{backgroundColor:"green",color:"white",width:"100px",height:"30px",border:"none",borderRadius:"5px"}}>Click me!</button>
 
         
 
