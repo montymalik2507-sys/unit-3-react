@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from'../css/article.module.css'
+import styled from "@emotion/styled"
 
 function Article (){
     const [count ,setCount]=useState(0)
@@ -32,8 +32,22 @@ function Article (){
         <button className="style.btn" onClick={handleIncrement}>Increment</button>
         <h2>{count}</h2>
         <button className="style.btn" onClick={handleDecrement}>Decrement</button>
+        <Button red > click me! </Button> 
+
+        
+
     </div>
   )
 }
 
 export default Article
+
+const Button=styled.button` 
+background-color:${props=>props.red ? "red" : "blue"};
+color:white;
+width:100px;
+height:30px;
+border:none;
+border-radius:5px; 
+` 
+
