@@ -1,14 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from "@emotion/styled"
 import {css } from "@emotion/react"
 
 function Article (){
+     
+    useEffect(()=>{
+        console.log("Component mounted")
+    }, [])
+    
+    useState(() => {
+        const fetchData = () =>{
+          console.log("Data fetched")
+        }
+        fetchData();  
+    }, [])
     const [count ,setCount]=useState(0)
     //let count =0;
 
     const handleIncrement = () => {
         //count+1;
-        setCount(count+1)
+        setCount(count+1) 
         console.log(count)
     }
 
