@@ -6,6 +6,7 @@ import './App.css'
 import Menu from './componets/menu'
 import Article from './componets/article' 
 import Homepage from './componets/Homepage'
+import Contact from './componets/contact' 
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Menu count={count} setCount={setCount}/> 
     <Article />
     <Homepage />
+    <Contact/>
       
     </>
   )
