@@ -7,6 +7,7 @@ import Menu from './componets/menu'
 import Article from './componets/article' 
 import Homepage from './componets/Homepage'
 import Contact from './componets/contact' 
+import { Routes } from 'react-router-dom'
 
 
 function App() {
@@ -15,11 +16,12 @@ function App() {
 
   return (
     <>
-    <Menu count={count} setCount={setCount}/> 
-    <Article />
-    <Homepage />
-    <Contact/>
-      
+    <Routes>
+      <Route path='/' element={<Homepage/>}/>
+      <Route path='/Menu' element={<Menu count={count} setCount={setCount}/>}/>
+      <Route path='/Article' element={<Article/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
+    </Routes>
     </>
   )
 }
